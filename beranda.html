@@ -16,59 +16,376 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Solid:wght@100;300;400;900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="body-no-grid">
-    <div>
-        <div class="container center-box">
-            <form action="" method="post">
+    <header class="nav-header">
+        <div class="nav-left">
+            <div class="logo">
+                <svg width="33" height="22" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M40.4167 -0.00341797L32.2292 1.42658L37.9375 7.91658L42.0417 7.18325L40.4167 -0.00341797ZM26.1042 2.48992L22 3.20492L27.7292 9.67658L31.8125 8.96158L26.1042 2.48992ZM15.8958 4.24992L11.7917 5.00158L17.5208 11.4732L21.6042 10.7582L15.8958 4.24992ZM5.66665 6.08325L3.62498 6.43158C2.54245 6.62192 1.58999 7.18252 0.976735 7.99029C0.363483 8.79807 0.139566 9.78699 0.35415 10.7399L1.16665 14.3332L11.375 12.5549L5.66665 6.08325ZM1.16665 14.3332V32.6666C1.16665 34.7016 3.04165 36.3333 5.33332 36.3333H38.6667C40.9792 36.3333 42.8333 34.7016 42.8333 32.6666V14.3332H1.16665Z"
+                        fill="white" />
+                </svg>
+                <h1>CHILL</h1>
+            </div>
+            <a href="">Series</a>
+            <a href="">Film</a>
+            <a href="">Daftar Saya</a>
+        </div>
 
-                <div class="box-logo-header">
-                    <svg width="33" height="22" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="nav-right">
+
+            <div class="dropdown">
+                <a href="#" class="dropbtn">
+                    <img src="images/beranda/user.png" class="icon">
+
+                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
-                            d="M40.4167 -0.00341797L32.2292 1.42658L37.9375 7.91658L42.0417 7.18325L40.4167 -0.00341797ZM26.1042 2.48992L22 3.20492L27.7292 9.67658L31.8125 8.96158L26.1042 2.48992ZM15.8958 4.24992L11.7917 5.00158L17.5208 11.4732L21.6042 10.7582L15.8958 4.24992ZM5.66665 6.08325L3.62498 6.43158C2.54245 6.62192 1.58999 7.18252 0.976735 7.99029C0.363483 8.79807 0.139566 9.78699 0.35415 10.7399L1.16665 14.3332L11.375 12.5549L5.66665 6.08325ZM1.16665 14.3332V32.6666C1.16665 34.7016 3.04165 36.3333 5.33332 36.3333H38.6667C40.9792 36.3333 42.8333 34.7016 42.8333 32.6666V14.3332H1.16665Z"
+                            d="M1.645 0.0214844L7 5.36482L12.355 0.0214844L14 1.66648L7 8.66648L0 1.66648L1.645 0.0214844Z"
                             fill="white" />
                     </svg>
-                    <h1>CHILL</h1>
-                </div>
+                </a>
 
-                <div class="box-title">
-                    <h3>Masuk</h3>
-                    <p>Selamat datang kembali !</p>
-                </div>
-
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input id="username" class="form-control" type="text" placeholder="Masukan username" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Kata Sandi</label>
-                    <input id="password" class="form-control" type="password" placeholder="Masukan kata" required>
-
-                    <i class="icon">
-                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ul class="dropdown-content">
+                    <a href="" class="icon-svg"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M9.8585 5L12.5002 7.63333C12.5002 7.59167 12.5002 7.54167 12.5002 7.5C12.5002 6.83696 12.2368 6.20107 11.7679 5.73223C11.2991 5.26339 10.6632 5 10.0002 5C9.95016 5 9.9085 5 9.8585 5ZM6.27516 5.66667L7.56683 6.95833C7.52516 7.13333 7.50016 7.30833 7.50016 7.5C7.50016 8.16304 7.76356 8.79893 8.2324 9.26777C8.70124 9.73661 9.33712 10 10.0002 10C10.1835 10 10.3668 9.975 10.5418 9.93333L11.8335 11.225C11.2752 11.5 10.6585 11.6667 10.0002 11.6667C8.89509 11.6667 7.83529 11.2277 7.05388 10.4463C6.27248 9.66488 5.8335 8.60507 5.8335 7.5C5.8335 6.84167 6.00016 6.225 6.27516 5.66667ZM1.66683 1.05833L3.56683 2.95833L3.94183 3.33333C2.56683 4.41667 1.4835 5.83333 0.833496 7.5C2.27516 11.1583 5.8335 13.75 10.0002 13.75C11.2918 13.75 12.5252 13.5 13.6502 13.05L14.0085 13.4L16.4418 15.8333L17.5002 14.775L2.72516 0M10.0002 3.33333C11.1052 3.33333 12.165 3.77232 12.9464 4.55372C13.7278 5.33512 14.1668 6.39493 14.1668 7.5C14.1668 8.03333 14.0585 8.55 13.8668 9.01667L16.3085 11.4583C17.5585 10.4167 18.5585 9.05 19.1668 7.5C17.7252 3.84167 14.1668 1.25 10.0002 1.25C8.8335 1.25 7.71683 1.45833 6.66683 1.83333L8.47516 3.625C8.95016 3.44167 9.4585 3.33333 10.0002 3.33333Z"
-                                fill="#9D9EA1" />
+                                d="M5.99984 0.666748C6.70708 0.666748 7.38536 0.9477 7.88546 1.4478C8.38555 1.94789 8.6665 2.62617 8.6665 3.33341C8.6665 4.04066 8.38555 4.71894 7.88546 5.21903C7.38536 5.71913 6.70708 6.00008 5.99984 6.00008C5.29259 6.00008 4.61432 5.71913 4.11422 5.21903C3.61412 4.71894 3.33317 4.04066 3.33317 3.33341C3.33317 2.62617 3.61412 1.94789 4.11422 1.4478C4.61432 0.9477 5.29259 0.666748 5.99984 0.666748ZM5.99984 7.33342C8.9465 7.33342 11.3332 8.52675 11.3332 10.0001V11.3334H0.666504V10.0001C0.666504 8.52675 3.05317 7.33342 5.99984 7.33342Z"
+                                fill="white" />
                         </svg>
-                    </i>
-                </div>
+                        Profil Saya</a>
 
-                <div class="box-account">
-                    <p>Belum punya akun ? <a href="register.html">Daftar</a></p>
-                    <a href="">Lupa kata sandi?</a>
-                </div>
+                    <a href="" class="icon-svg"><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.00016 10.5133L11.1202 12.9999L10.0268 8.31325L13.6668 5.15992L8.8735 4.74659L7.00016 0.333252L5.12683 4.74659L0.333496 5.15992L3.96683 8.31325L2.88016 12.9999L7.00016 10.5133Z"
+                                fill="white" />
+                        </svg>
+                        Ubah Premium</a>
 
-                <div class="box-footer">
-                    <button class="btn btn-primary" type="submit" href="">Masuk</button>
-                    <p>atau</p>
-                    <a class="btn btn-secondary" type="submit" href="">Masuk dengan Google</a>
-                    <img src="assets/login/google-icon.png" alt="">
-                </div>
-            </form>
+                    <a href="" class="icon-svg"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.6667 0H1.33333C0.593333 0 0 0.593333 0 1.33333V4H1.33333V1.33333H10.6667V10.6667H1.33333V8H0V10.6667C0 11.0203 0.140476 11.3594 0.390524 11.6095C0.640573 11.8595 0.979711 12 1.33333 12H10.6667C11.0203 12 11.3594 11.8595 11.6095 11.6095C11.8595 11.3594 12 11.0203 12 10.6667V1.33333C12 0.593333 11.4 0 10.6667 0ZM4.72 8.38667L5.66667 9.33333L9 6L5.66667 2.66667L4.72 3.60667L6.44667 5.33333H0V6.66667H6.44667L4.72 8.38667Z"
+                                fill="white" />
+                        </svg>
+                        Keluar</a>
+                </ul>
+            </div>
+
         </div>
-    </div>
+    </header>
+
+    <main>
+        <!-----------------------------------------------------Section 1 ----------------------------------------->
+        <section class="section-hero">
+            <div>
+                <img class="image-section-hero" src="images/beranda/bg-section-1.png" alt="">
+                <div class="content-1">
+                    <h1>Duty After School</h1>
+                    <p>Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan
+                        Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa
+                        sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
+                </div>
+
+                <div class="content-footer-1">
+                    <div class="content-footer-left">
+                        <a href="#" class="btn-footer-start">Mulai</a>
+
+                        <a href="#" class="btn-footer-more">
+                            <img src="images/beranda/info.png" class="icon-info" width="14px" />
+                            <span>Selengkapnya</span>
+                        </a>
+
+                        <img src="images/beranda/18+.png" width="40px" />
+                    </div>
+
+                    <div class="content-footer-right">
+                        <img src="images/beranda/volume-off.png" width="35px" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-----------------------------------------------------Section 2 ----------------------------------------->
+        <section class="section-small-poster">
+            <div class="section-title">
+                <h3>Melanjutkan Tonton Film</h3>
+            </div>
+
+            <div class="content-poster">
+
+                <img src="images/beranda/arrow-left.png" class="icon-left" />
+
+                <div class="box-content">
+
+                    <div class="image-content">
+                        <img src="images/beranda/dont-look-up.png" width="289" />
+
+                        <div class="image-footer">
+                            <div class="image-footer-left">
+                                <p>Dont Look Up</p>
+                            </div>
+
+                            <div class="image-footer-right">
+                                <i class="icon-footer-right">
+                                    <img src="images/beranda/star.png" width="16px" />
+                                </i>
+                                <p>4.4/5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-content">
+                        <img src="images/beranda/the-batman.png" width="289" />
+
+                        <div class="image-footer">
+                            <div class="image-footer-left">
+                                <p>The Batman</p>
+                            </div>
+
+                            <div class="image-footer-right">
+                                <i class="icon-footer-right">
+                                    <img src="images/beranda/star.png" width="16px" />
+                                </i>
+                                <p>4.2/5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-new-episode">Episode Baru</label>
+                        <img src="images/beranda/blue-lock.png" width="289" />
+
+                        <div class="image-footer">
+                            <div class="image-footer-left">
+                                <p>Blue Lock</p>
+                            </div>
+
+                            <div class="image-footer-right">
+                                <i class="icon-footer-right">
+                                    <img src="images/beranda/star.png" width="16px" />
+                                </i>
+                                <p>4.4/5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-content">
+                        <img src="images/beranda/a-man-called-otto.png" width="289" />
+
+                        <div class="image-footer">
+                            <div class="image-footer-left">
+                                <p>A Man Called Otto</p>
+                            </div>
+
+                            <div class="image-footer-right">
+                                <i class="icon-footer-right">
+                                    <img src="images/beranda/star.png" width="16px" />
+                                </i>
+                                <p>4.4/5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <img src="images/beranda/arrow-right.png" class="icon-right" />
+
+            </div>
+        </section>
+
+        <!-----------------------------------------------------Section 3 ----------------------------------------->
+        <section class="section-medium-poster">
+            <div class="section-title">
+                <h3>Top Rating Film dan Series Hari ini</h3>
+            </div>
+
+            <div class="content-poster">
+
+                <img src="images/beranda/arrow-left.png" class="icon-left-medium" />
+
+                <div class="box-content">
+
+                    <div class="image-content">
+                        <label class="label-new-episode">Episode Baru</label>
+                        <img src="images/beranda/suzume.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <img src="images/beranda/jurassic-world.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <img src="images/beranda/sonic.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-new-episode">Episode Baru</label>
+                        <img src="images/beranda/all-of-us-are-dead.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-top-ten">Top 10</label>
+                        <img src="images/beranda/big-hero-6.png" width="228" />
+                    </div>
+
+                </div>
+
+                <img src="images/beranda/arrow-right.png" class="icon-right-medium" />
+
+            </div>
+        </section>
+
+        <!-----------------------------------------------------Section 4 ----------------------------------------->
+        <section class="section-medium-poster">
+            <div class="section-title">
+                <h3>Film Trending</h3>
+            </div>
+
+            <div class="content-poster">
+
+                <img src="images/beranda/arrow-left.png" class="icon-left-medium" />
+
+                <div class="box-content">
+
+                    <div class="image-content">
+                        <label class="label-top-ten">Top 10</label>
+                        <img src="images/beranda/the-tomorrow-war.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-top-ten">Top 10</label>
+                        <img src="images/beranda/quantumania.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-top-ten">Top 10</label>
+                        <img src="images/beranda/guardians-of-the-galaxy.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-top-ten">Top 10</label>
+                        <img src="images/beranda/a-man-called-otto-2.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-top-ten">Top 10</label>
+                        <img src="images/beranda/little-mermaid.png" width="228" />
+                    </div>
+
+                </div>
+
+                <img src="images/beranda/arrow-right.png" class="icon-right-medium" />
+
+            </div>
+        </section>
+
+        <!-----------------------------------------------------Section 5 ----------------------------------------->
+        <section class="section-medium-poster">
+            <div class="section-title">
+                <h3>Rilis Baru</h3>
+            </div>
+
+            <div class="content-poster">
+
+                <img src="images/beranda/arrow-left.png" class="icon-left-medium" />
+
+                <div class="box-content">
+
+                    <div class="image-content">
+                        <label class="label-top-ten">Top 10</label>
+                        <img src="images/beranda/little-mermaid.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-new-episode">Episode Baru</label>
+                        <img src="images/beranda/duty-after-school.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-top-ten">Top 10</label>
+                        <img src="images/beranda/big-hero-6.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <label class="label-new-episode">Episode Baru</label>
+                        <img src="images/beranda/all-of-us-are-dead.png" width="228" />
+                    </div>
+
+                    <div class="image-content">
+                        <img src="images/beranda/missing.png" width="228" />
+                    </div>
+
+                </div>
+
+                <img src="images/beranda/arrow-right.png" class="icon-right-medium" />
+
+            </div>
+        </section>
+    </main>
+
+    <!-----------------------------------------------------Footer----------------------------------------->
+    <footer>
+        <div class="footer-content">
+            <div class="box-footer-content">
+                <div class="content-left">
+                    <div class="content-item">
+                        <img src="images/beranda/logo.svg">
+                        <h1>CHILL</h1>
+                    </div>
+
+                    <div class="content-item">
+                        <p>&#64 2023 Chill All Rights Reserved.</p>
+                    </div>
+                </div>
+
+                <div class="content-center">
+
+                    <div class="content-center-item">
+                        <div class="center-item">
+                            <p>Aksi</p>
+                            <p>Anak-anak</p>
+                            <p>Anime</p>
+                            <p>Britania</p>
+                        </div>
+
+                        <div class="content-center-item">
+                            <p>Drama</p>
+                            <p>Fantasi Ilmiah & fantasi</p>
+                            <p>Kejahatan</p>
+                            <p>KDrama</p>
+                        </div>
+
+                        <div class="content-center-item">
+                            <p>Komedi</p>
+                            <p>Petualangan</p>
+                            <p>Perang</p>
+                            <p>Romantis</p>
+                        </div>
+
+                        <div class="content-center-item">
+                            <p>Sains & Alam</p>
+                            <p>Thriller</p>
+                        </div>
+                    </div>
+
+                    <div class="content-right">
+                        <p>FAQ</p>
+                        <p>Kontak Kami</p>
+                        <p>Privasi</p>
+                        <p>Syarat &</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
 </body>
 
