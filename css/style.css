@@ -154,7 +154,7 @@ a:focus {
     height: 12px;
     position: absolute; 
     left: 25%; 
-    top: 72%; 
+    top: 75%; 
     transform: translateY(50%); 
 }
 
@@ -185,6 +185,7 @@ a.btn{
      background-color: transparent;
      color: #FFFFFF;
 }
+
 
 /* ----------------------------------------------Beranda------------------------------------------------------- */
 html,
@@ -658,8 +659,8 @@ footer{
     }
 
     .box-footer img {
-        left: 23%; 
-        top: 73%;
+        left: 30%; 
+        top: 76%;
         width: 10px;
         height: 10px;
     }
