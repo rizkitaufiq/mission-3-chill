@@ -22,21 +22,21 @@ body.body-grid {
 h1{
     font-family: 'Londrina Solid', sans-serif;
     font-weight: 400;
-    font-style: normal;
-
+    font-size: 50px;
 }
 
 h3{
     font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 32px;
     margin: 0;
 }
 
 p{
     font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-size: 11px;
+    font-weight: 400;
+    font-size: 16px;
     color: #ffffffb2;
 }
 
@@ -90,7 +90,7 @@ p{
     display: block;
     margin-bottom: 8px;
     color: #ffffffb2;
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .form-group .icon {
@@ -122,6 +122,12 @@ p{
     justify-content: space-between;
     align-items: center;
     font-size: 11px;
+}
+
+.box-account a{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 a,
